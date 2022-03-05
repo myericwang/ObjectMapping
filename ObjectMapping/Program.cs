@@ -8,14 +8,14 @@
             var model = new Model("account_A", "name_B");
 
             // outModle
-            FormDataObject formDataObject = new FormDataObject("TagA");
+            FormDataObject formData = new FormDataObject("TagA");
 
             // Request
             var request = new Model();
 
             var objMapping = new ObjectMapping();
 
-            var ans = objMapping.GetTreeMapResult<FormDataObject>("test2.json", model, formDataObject);
+            var ans = objMapping.GetTreeMapResult<FormDataObject>("test2.json", model, formData);
 
             request = objMapping.GetTreeMapResult<Model>("test3.json", ans, request);
         }
@@ -37,7 +37,6 @@
         public string Name { get; set; }
     }
 
-
     public class FormDataObject
     {
         public FormDataObject(string tag)
@@ -53,7 +52,6 @@
 
         public string Tag { get; set; }
     }
-
 
     public class FormMian
     {
