@@ -1,9 +1,9 @@
 {
-  "Account": {
+  "UserAccount": {
     "InParameter": "FormInfo.Account",
     "TransWay": 0
   },
-  "Name": {
+  "UserName": {
     "InParameter": "FormInfo.Name",
     "TransWay": 0
   }

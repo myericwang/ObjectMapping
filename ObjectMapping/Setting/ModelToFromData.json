@@ -2,13 +2,13 @@
   "FormInfo": [
     {
       "Account": {
-        "InParameter": "Account",
+        "InParameter": "UserAccount",
         "TransWay": 0
       }
     },
     {
       "Name": {
-        "InParameter": "Name",
+        "InParameter": "UserName",
         "TransWay": 0
       }
     }

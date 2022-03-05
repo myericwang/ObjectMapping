@@ -15,9 +15,9 @@
 
             var objMapping = new ObjectMapping();
 
-            var ans = objMapping.GetTreeMapResult<FormDataObject>("test2.json", model, formData);
+            var ans = objMapping.GetTreeMapResult<FormDataObject>(@"Setting\ModelToFromData.json", model, formData);
 
-            request = objMapping.GetTreeMapResult<Model>("test3.json", ans, request);
+            request = objMapping.GetTreeMapResult<Model>(@"Setting\FromDataToModel.json", ans, request);
         }
     }
 
@@ -28,13 +28,15 @@
 
         public Model(string A, string B)
         {
-            this.Account = A;
-            this.Name = B;
+            this.UserAccount = A;
+            this.UserName = B;
         }
 
-        public string Account { get; set; }
+        public string SID { get; set; }
 
-        public string Name { get; set; }
+        public string UserAccount { get; set; }
+
+        public string UserName { get; set; }
     }
 
     public class FormDataObject
@@ -57,8 +59,8 @@
     {
         public FormMian()
         {
-            this.FormKey = "OAO018";
-            this.FormID = "OAO01820220303TEST001";
+            this.FormKey = "TEST018";
+            this.FormID = "TEST01820220303TEST001";
         }
 
         public string FormKey { get; set; }

@@ -26,7 +26,7 @@ namespace ObjectMapping
         /// <summary>
         /// 新Guid
         /// </summary>
-        NewGuidToString = 111,
+        SetNewGuid = 111,
 
         /// <summary>
         /// List<object> to List<object>
