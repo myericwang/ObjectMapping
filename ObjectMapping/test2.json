@@ -1,0 +1,16 @@
+{
+  "FormInfo": [
+    {
+      "Account": {
+        "InParameter": "Account",
+        "TransWay": 0
+      }
+    },
+    {
+      "Name": {
+        "InParameter": "Name",
+        "TransWay": 0
+      }
+    }
+  ]
+}
