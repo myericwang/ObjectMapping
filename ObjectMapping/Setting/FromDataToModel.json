@@ -6,5 +6,9 @@
   "UserName": {
     "InParameter": "FormInfo.Name",
     "TransWay": 0
+  },
+  "SID": {
+    "InParameter": null,
+    "TransWay": 111
   }
 }

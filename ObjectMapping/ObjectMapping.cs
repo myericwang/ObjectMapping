@@ -66,9 +66,15 @@ namespace ObjectMapping
             ITrans = new Dictionary<EnumTransWay, transMethod>()
             {
                 { EnumTransWay.Default, new transMethod(Default) },
-                { EnumTransWay.SetNull, new transMethod(setNull) },
+                { EnumTransWay.SetNull, new transMethod(SetNull) },
                 { EnumTransWay.TwoListToDictionary, new transMethod(TwoListToDictionary) },
+                { EnumTransWay.SetNewGuid, new transMethod(SetNewGuid) },
             };
+        }
+
+        private object SetNewGuid(TreeMappingModel obj)
+        {
+            return Guid.NewGuid();
         }
 
         private delegate object transMethod(TreeMappingModel obj);
@@ -158,7 +164,7 @@ namespace ObjectMapping
         /// </summary>
         /// <param name="map">設定物件</param>
         /// <returns>NULL</returns>
-        private object setNull(TreeMappingModel map)
+        private object SetNull(TreeMappingModel map)
         {
             return null;
         }
